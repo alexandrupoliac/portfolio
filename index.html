@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandru Poliac &mdash; Digital media, design, data analysis</title>
+<meta name="description" content="Portfolio of Alexandru Poliac &mdash; design, data visualization and civic tech.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="#top" class="nav-name">Alexandru Poliac</a>
+  <nav class="nav-links">
+    <a href="#work" class="nav-link">Work</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link nav-cta">Get in touch</a>
+  </nav>
+</header>
+
+<!-- ============ HERO / HELIX ============ -->
+<section id="top" class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+  <div class="glow glow-c" aria-hidden="true"></div>
+  <div id="stage" class="stage">
+    <div id="ring" class="ring"></div>
+  </div>
+  <div id="work" class="ticker-bar">
+    <div class="ticker-mask">
+      <div id="tickTrack" class="ticker-track"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAIL PANEL ============ -->
+<div id="panel" class="panel" hidden>
+  <div class="panel-header">
+    <span id="panelCount" class="panel-count"></span>
+    <button type="button" id="panelClose" class="panel-close" aria-label="Close">&times;</button>
+  </div>
+  <div class="panel-scroll">
+    <div id="panelCover" class="panel-cover"></div>
+    <div class="panel-body">
+      <div class="panel-tags">
+        <span id="panelCat" class="panel-cat"></span>
+        <span id="panelWip" class="panel-wip" hidden>Work in progress</span>
+      </div>
+      <h3 id="panelTitle" class="panel-title"></h3>
+      <p id="panelInfo" class="panel-info"></p>
+      <a id="panelLive" class="panel-live" target="_blank" rel="noopener" hidden>See live project <span class="arrow">&nearr;</span></a>
+
+      <div class="panel-kv">
+        <div class="kv-row"><span class="kv-label">Client</span><span id="panelClient" class="kv-value"></span></div>
+        <div class="kv-row"><span class="kv-label">Location</span><span id="panelLocation" class="kv-value"></span></div>
+        <div class="kv-row"><span class="kv-label">Year</span><span id="panelYear" class="kv-value"></span></div>
+      </div>
+
+      <div class="panel-section">
+        <div class="section-label">Skills</div>
+        <div id="panelSkills" class="panel-skills"></div>
+      </div>
+
+      <div class="panel-section">
+        <div class="section-label">Credits</div>
+        <div id="panelCredits" class="panel-credits"></div>
+      </div>
+
+      <div id="panelGallerySection" class="panel-section" hidden>
+        <div class="section-label">Gallery</div>
+        <div id="panelGallery" class="panel-gallery"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="lightbox" hidden>
+  <img id="lightboxImg" class="lightbox-img" alt="">
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="eyebrow">About</div>
+  <h2 class="about-lead">I make things make sense. Whether that&rsquo;s a dataset, a presentation, or a brand &mdash; I find the clearest way to say it visually.</h2>
+  <div class="about-grid">
+    <div>
+      <div class="eyebrow accent">My background</div>
+      <p class="body-text">I&rsquo;m from Baia Mare, spent a year in Michigan on a scholarship, and ended up in Timi&#537;oara studying Digital Media. Along the way I&rsquo;ve written technical docs at Nokia, led a 100-person volunteer team for an international student festival, analyzed public spending data for city-wide exhibitions, and now work on public-private partnerships at Aumovio. It&rsquo;s a weird mix. It works.</p>
+    </div>
+    <div>
+      <div class="eyebrow accent">My approach</div>
+      <p class="body-text">I get uncomfortable when things are harder to understand than they need to be. That instinct drives most of what I do &mdash; whether I&rsquo;m designing a layout, mapping a network, or building a deck for someone&rsquo;s board meeting.</p>
+    </div>
+  </div>
+  <div class="about-grid about-grid-bottom">
+    <div>
+      <div class="eyebrow muted">Career</div>
+      <div id="career" class="career-list"></div>
+    </div>
+    <div class="portrait">
+      <img src="https://framerusercontent.com/images/GNeyPcrWQ69m0FEK9QXmWwo3v4.png" alt="Alexandru Poliac">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="eyebrow">Contact</div>
+  <h2 class="contact-lead">Let&rsquo;s create something meaningful together. I&rsquo;d love to hear about your project, big or small.</h2>
+  <div class="about-grid">
+    <div>
+      <div class="eyebrow accent">Email &amp; phone</div>
+      <a href="mailto:alexandrupoliac@gmail.com" class="contact-email">alexandrupoliac@gmail.com</a>
+      <div class="contact-phone">0774 073 678</div>
+    </div>
+    <div>
+      <div class="eyebrow accent">Socials</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/alex.poliac/" target="_blank" rel="noopener" class="social-link">Instagram <span class="arrow">&nearr;</span></a>
+        <a href="https://www.linkedin.com/in/alex-poliac/" target="_blank" rel="noopener" class="social-link">LinkedIn <span class="arrow">&nearr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <span>Alexandru Poliac</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
