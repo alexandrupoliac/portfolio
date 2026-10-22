@@ -24,7 +24,7 @@
       credits: ['PhD. Silvia Fierăscu — project coordinator', 'Bogdan Doboșeru, Laurențiu Florea, Andrei Galescu — data gathering', 'Alexandru Poliac-Seres — data cleaning, web dev', 'Briana Toader — promo materials'],
       info: "An interactive data visualization platform mapping the formal partnership ecosystem of Romania's Department for Emergency Situations (DSU). The project graphs connections between DSU and organizations across Romania, classified by activity domain and collaboration type — including strategic partners and those involved in the Ukraine crisis response. Built as a public-facing tool for citizens, researchers, and policymakers, combining network graph exploration with operational and medical statistics dashboards.",
       cover: IMG + 'Su4EUMOY3h4IA9vMbWelNIJJSQ.png',
-      live: 'https://big-data-edu.github.io/DSU-main/#network',
+      live: 'https://alexandrupoliac.github.io/ecosistemDSU/',
       gallery: [IMG + 'OLsy1jxPDfnO6yIKYWPGSNuf8.png', IMG + 'eE6hwW6MzBZiT90jOtuPruLh3w.png', IMG + 'yApy3dYrh4ydt757oYW0CDaHi4.png', IMG + 'B6eVrIOh7rAdfpDdg923LbEB8o.png'],
       wip: true,
       built: [
@@ -53,7 +53,7 @@
       ],
     },
     {
-      slug: 'connectm1', idx: '03', title: "Spendings of Timișoara's Public Institutions",
+      slug: 'connectm1', idx: '03', title: 'Public Spending in Timișoara',
       cat: 'Civic / Data viz', year: '2023 – 2024', client: 'ConnecTM', location: 'Timișoara',
       skills: ['Excel', 'Data cleaning', 'Gephi', 'Network analysis', 'Illustrator', 'Figma'],
       credits: ['PhD. Silvia Fierăscu — project coordinator', 'Alexandru Poliac-Seres — data cleaning, data visualization, graphics', 'Briana Toader — graphics', 'Lucian Soare — video editing', 'Alexia Stroe — project presentation'],
