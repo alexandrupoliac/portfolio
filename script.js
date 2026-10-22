@@ -19,16 +19,39 @@
       cat: 'Data / Network', year: '2026',
       client: 'Departamentul pentru Situații de Urgență & West University of Timișoara',
       location: 'Timișoara',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Gephi', 'Canva', 'Claude Code'],
+      skills: ['JavaScript', 'D3.js', 'Plotly.js', 'HTML / CSS', 'Gephi', 'GitHub Pages', 'Claude Code'],
       credits: ['PhD. Silvia Fierăscu — project coordinator', 'Bogdan Doboșeru, Laurențiu Florea, Andrei Galescu — data gathering', 'Alexandru Poliac-Seres — data cleaning, web dev', 'Briana Toader — promo materials'],
       info: "An interactive data visualization platform mapping the formal partnership ecosystem of Romania's Department for Emergency Situations (DSU). The project graphs connections between DSU and organizations across Romania, classified by activity domain and collaboration type — including strategic partners and those involved in the Ukraine crisis response. Built as a public-facing tool for citizens, researchers, and policymakers, combining network graph exploration with operational and medical statistics dashboards.",
       cover: IMG + 'Su4EUMOY3h4IA9vMbWelNIJJSQ.png',
       live: 'https://big-data-edu.github.io/DSU-main/#network',
       gallery: [IMG + 'OLsy1jxPDfnO6yIKYWPGSNuf8.png', IMG + 'eE6hwW6MzBZiT90jOtuPruLh3w.png', IMG + 'yApy3dYrh4ydt757oYW0CDaHi4.png', IMG + 'B6eVrIOh7rAdfpDdg923LbEB8o.png'],
       wip: true,
+      built: [
+        'Reconciled 311 organization-name variants from DSU reports and public sources into one clean list of 256 organizations.',
+        'Structured the data as modular CSV datasets: 64 strategic partners, an operational network of 256 organizations and 34 county inspectorates, and the FONSS subnetwork.',
+        'Ran network analysis in Gephi, including resilience scenarios: removing one key organization splits the network from 4 into 13 components.',
+        'Built the static web app (JavaScript, D3.js, Plotly.js) on GitHub Pages with AI coding assistants; I owned the data model, design decisions and validation.',
+        'Ran a usability test with 5 external participants before the public release.',
+      ],
     },
     {
-      slug: 'unihack', idx: '02', title: 'UniHack',
+      slug: 'connectm1', idx: '02', title: "Spendings of Timișoara's Public Institutions",
+      cat: 'Civic / Data viz', year: '2023 – 2024', client: 'ConnecTM', location: 'Timișoara',
+      skills: ['Excel', 'Data cleaning', 'Gephi', 'Network analysis', 'Illustrator', 'Figma'],
+      credits: ['PhD. Silvia Fierăscu — project coordinator', 'Alexandru Poliac-Seres — data cleaning, data visualization, graphics', 'Briana Toader — graphics', 'Lucian Soare — video editing', 'Alexia Stroe — project presentation'],
+      info: "A network analysis project mapping the spending relationships between Timișoara's public institutions and their contracted firms. Using graph theory and data visualization, the project splits the public expenditure network into two layers — institutions × institutions and firms × firms — revealing 5 distinct hubs where the same institutions consistently contract the same companies. Built to promote transparency and accountability in local public spending.",
+      cover: IMG + 'FIZRa6wfjIeXGhNKE1lmzCMXYs.jpg',
+      live: 'https://connectm.uvt.ro/2023-2024/proiecte-anul-1/cheltuielile-institutiilor-din-timisoara/',
+      gallery: [],
+      built: [
+        'Collected and cleaned 40,000+ payment records from 73 public institutions and ~1,000 contracted firms.',
+        'Projected the data into two networks in Gephi (institutions × institutions and firms × firms) to see who repeatedly works with whom.',
+        'Identified 5 hubs where the same institutions consistently contract the same companies.',
+        'Turned the analysis into a poster for a public exhibition.',
+      ],
+    },
+    {
+      slug: 'unihack', idx: '03', title: 'UniHack',
       cat: 'Identity / Event', year: '2024 – 2025', client: 'Liga AC', location: 'Timișoara',
       skills: ['Photoshop', 'Illustrator', 'Figma', 'AI Tools'],
       credits: ['Design Coordinator: Alexandru Poliac', 'Some materials co-produced with the UniHack 6 Design Team volunteers'],
@@ -45,16 +68,6 @@
         IMG + 'YOOqnrkxjUm67433tkjyuNoNo.png',
         IMG + 'NeYKzYIV17mJb8Q8fvv93uhEqA.png',
       ],
-    },
-    {
-      slug: 'connectm1', idx: '03', title: "Spendings of Timișoara's Public Institutions",
-      cat: 'Civic / Data viz', year: '2024', client: 'ConnecTM', location: 'Timișoara',
-      skills: ['Gephi', 'Excel', 'Illustrator', 'Figma', 'AI Tools'],
-      credits: ['PhD. Silvia Fierăscu — project coordinator', 'Alexandru Poliac-Seres — data cleaning, data visualization, graphics', 'Briana Toader — graphics', 'Lucian Soare — video editing', 'Alexia Stroe — project presentation'],
-      info: "A network analysis project mapping the spending relationships between Timișoara's public institutions and their contracted firms. Using graph theory and data visualization, the project splits the public expenditure network into two layers — institutions × institutions and firms × firms — revealing 5 distinct hubs where the same institutions consistently contract the same companies. Built to promote transparency and accountability in local public spending.",
-      cover: IMG + 'FIZRa6wfjIeXGhNKE1lmzCMXYs.jpg',
-      live: 'https://connectm.uvt.ro/2023-2024/proiecte-anul-1/cheltuielile-institutiilor-din-timisoara/',
-      gallery: [],
     },
     {
       slug: 'retroform', idx: '04', title: 'Retroform',
@@ -91,8 +104,10 @@
     { years: '2023 – 2024', role: 'Technical Content Design Trainee, Nokia' },
     { years: '2023 – 2025', role: 'Tracks & Design Coordinator, UniHack' },
     { years: '2024 – 2025', role: 'Vice Coordinator, ISWinT' },
+    { years: '2024 – now', role: 'Student Researcher, FabLab UVT' },
     { years: '2025', role: 'QA Tester, Ikon Soft' },
-    { years: '2025 – now', role: 'Public-Private Partnerships Intern, Aumovio' },
+    { years: '2025 – now', role: 'Public-Private Partnerships Intern, AUMOVIO' },
+    { years: '2026 – now', role: 'MSc Information Systems for Business, UVT' },
   ];
 
   // Hardcoded defaults (the Claude Design tweaks panel doesn't exist outside the design tool).
@@ -134,7 +149,7 @@
     buildTicker() {
       const idItems = [
         { isId: true, text: 'Alexandru Poliac', color: '#EDEBE4', transform: 'none', glyph: '' },
-        { isId: true, text: 'Digital media · design · data analysis', color: '#8A8C93', transform: 'uppercase', glyph: '' },
+        { isId: true, text: 'Data · systems · visual communication', color: '#8A8C93', transform: 'uppercase', glyph: '' },
         { isId: true, text: 'alexandrupoliac@gmail.com', color: '#9b9ca2', transform: 'none', glyph: '✉' },
         { isId: true, text: '0774 073 678', color: '#9b9ca2', transform: 'none', glyph: '☎' },
       ];
@@ -255,6 +270,13 @@
       $('panelYear').textContent = p.year;
       $('panelSkills').innerHTML = (p.skills || []).map((s) => '<span class="skill-chip">' + escapeHtml(s) + '</span>').join('');
       $('panelCredits').innerHTML = (p.credits || []).map((c) => '<div class="credit-item">' + escapeHtml(c) + '</div>').join('');
+
+      const builtSection = $('panelBuiltSection');
+      const hasBuilt = !!(p.built && p.built.length);
+      builtSection.hidden = !hasBuilt;
+      $('panelBuilt').innerHTML = hasBuilt
+        ? p.built.map((b) => '<li class="built-item">' + escapeHtml(b) + '</li>').join('')
+        : '';
 
       const gallerySection = $('panelGallerySection');
       const hasGallery = !!(p.gallery && p.gallery.length);

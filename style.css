@@ -212,6 +212,9 @@ a { color: inherit; text-decoration: none; }
 }
 .panel-credits { display: flex; flex-direction: column; gap: 8px; }
 .credit-item { font-size: 13px; color: #C7C8CD; line-height: 1.45; }
+.panel-built { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.built-item { font-size: 13px; color: #C7C8CD; line-height: 1.5; padding-left: 4px; }
+.built-item::marker { color: var(--accent); font-size: 12px; }
 .panel-gallery { display: flex; flex-direction: column; gap: 12px; }
 .panel-gallery img {
   width: 100%; height: auto; display: block;
