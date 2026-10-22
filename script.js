@@ -11,6 +11,7 @@
     'Editorial / Art direction': 'Editorial',
     'Product / UX': 'UX / UI',
     'Motion / Ad': 'Motion',
+    'Concept / Civic tech': 'Concept',
   };
 
   const PROJECTS = [
@@ -35,7 +36,24 @@
       ],
     },
     {
-      slug: 'connectm1', idx: '02', title: "Spendings of Timișoara's Public Institutions",
+      slug: 'civitas', idx: '02', title: 'CIVITAS',
+      cat: 'Concept / Civic tech', year: '2026',
+      client: 'Concept for DSU, with FabLab UVT', location: 'Timișoara',
+      skills: ['Stakeholder research', 'Process mapping', 'Requirements', 'Prototyping', 'Claude Code'],
+      credits: ['PhD. Silvia Fierăscu — project coordinator', 'Alexandru Poliac-Seres — research, concept, prototype'],
+      info: "CIVITAS is a concept for an emergency-coordination platform, developed at FabLab UVT as a proposal for Romania's Department for Emergency Situations (DSU). It grew out of conversations with DSU, public institutions and NGOs, and focuses on two questions: how authorities coordinate with each other during a crisis, and how the capabilities of civil society can be mobilized quickly. The working prototype is confidential, so this page shows the idea rather than the interface.",
+      cover: 'images/civitas.png',
+      live: null, gallery: [],
+      wip: true,
+      built: [
+        'Mapped existing capabilities and gaps in crisis coordination together with DSU, institutions and NGOs.',
+        'Narrowed a first concept of ten modules down to two priorities, based on stakeholder feedback: coordination between authorities and mobilization of civil society.',
+        'Prototyped role-based workspaces, incident and resource flows, and capability matching, iterated through demos with stakeholders.',
+        'Built on simulated data as a concept; the next step is a documented handoff to developers.',
+      ],
+    },
+    {
+      slug: 'connectm1', idx: '03', title: "Spendings of Timișoara's Public Institutions",
       cat: 'Civic / Data viz', year: '2023 – 2024', client: 'ConnecTM', location: 'Timișoara',
       skills: ['Excel', 'Data cleaning', 'Gephi', 'Network analysis', 'Illustrator', 'Figma'],
       credits: ['PhD. Silvia Fierăscu — project coordinator', 'Alexandru Poliac-Seres — data cleaning, data visualization, graphics', 'Briana Toader — graphics', 'Lucian Soare — video editing', 'Alexia Stroe — project presentation'],
@@ -51,7 +69,7 @@
       ],
     },
     {
-      slug: 'unihack', idx: '03', title: 'UniHack',
+      slug: 'unihack', idx: '04', title: 'UniHack',
       cat: 'Identity / Event', year: '2024 – 2025', client: 'Liga AC', location: 'Timișoara',
       skills: ['Photoshop', 'Illustrator', 'Figma', 'AI Tools'],
       credits: ['Design Coordinator: Alexandru Poliac', 'Some materials co-produced with the UniHack 6 Design Team volunteers'],
@@ -70,7 +88,7 @@
       ],
     },
     {
-      slug: 'retroform', idx: '04', title: 'Retroform',
+      slug: 'retroform', idx: '05', title: 'Retroform',
       cat: 'Editorial / Art direction', year: '2026', client: 'Class project', location: 'Timișoara',
       skills: ['InDesign', 'AI Tools'],
       credits: ['Magazine texts generated with Claude', 'Mock-ups generated with Nano Banana 3'],
@@ -80,7 +98,7 @@
       gallery: [IMG + '0M7f3CMp1S8PkBBtXlxtRJtzxE.png', IMG + '01euwQ0uce4jeaxxJaWpBXo63w.png', IMG + '8vg7MABBQXrMzoDFq644D3q3ZQ.png', IMG + 'KMrccjPakr16wo5FuuPrRjbi4.png'],
     },
     {
-      slug: 'wecreate', idx: '05', title: 'weCREATE',
+      slug: 'wecreate', idx: '06', title: 'weCREATE',
       cat: 'Product / UX', year: '2025', client: 'Class project', location: 'Timișoara',
       skills: ['Illustrator', 'Figma', 'AI Tools'],
       credits: ['Alexandru Poliac'],
@@ -90,7 +108,7 @@
       gallery: [IMG + 'ShfeuPTw9uQGZZiNCWAIGH0cE.png'],
     },
     {
-      slug: 'jpchenet', idx: '06', title: 'JP Chenet',
+      slug: 'jpchenet', idx: '07', title: 'JP Chenet',
       cat: 'Motion / Ad', year: '2024', client: 'Class project (UVT)', location: 'Timișoara',
       skills: ['Camtasia'],
       credits: ['Alexandru Poliac'],
@@ -209,7 +227,7 @@
         card.addEventListener('pointerenter', () => { if (this.focusIndex < 0) card.style.borderColor = ACCENT_VAR; });
         card.addEventListener('pointerleave', () => { if (this.focusIndex !== i) card.style.borderColor = BORDER; });
         ring.appendChild(card);
-        this.cards.push({ el: card, base: (i / PROJECTS.length) * 360 });
+        this.cards.push({ el: card, base: -(i / PROJECTS.length) * 360 });
       });
 
       if (!this._bound) {
